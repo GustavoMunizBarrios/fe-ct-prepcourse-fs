@@ -22,6 +22,11 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
+   var arraySuma = [];
+   for(i=0; i < array.length; i++) {
+      arraySuma[i] = array[i] + 1;
+   }
+   return arraySuma;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
