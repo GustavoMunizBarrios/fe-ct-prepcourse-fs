@@ -9,6 +9,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
+   return array[array.length - 1];
 }
 
 function obtenerLargoDelArray(array) {
