@@ -86,6 +86,15 @@ function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
+   let mayor = arrayOfNums[0]; // Asignamos el primer elemento del arreglo a mayor
+
+   for (let i = 1; i < arrayOfNums.length; i++) {
+     if (arrayOfNums[i] > mayor) {
+       mayor = arrayOfNums[i]; // Si el elemento actual es mayor que max, asignamos el valor de ese elemento a mayor
+     }
+   }
+ 
+   return mayor; // Retornamos el número más grandes
 }
 
 function multiplicarArgumentos() {
