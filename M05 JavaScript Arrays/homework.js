@@ -120,6 +120,13 @@ function multiplicarArgumentos() {
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
+   var nuevoArray = [];
+   for (i=0; i < array.length; i++) {
+      if (array[i] > 18) {
+         nuevoArray.push(array[i]);
+      }
+   }
+   return nuevoArray.length;
 }
 
 function diaDeLaSemana(numeroDeDia) {
