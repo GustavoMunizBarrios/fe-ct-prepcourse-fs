@@ -145,6 +145,9 @@ function empiezaConNueve(num) {
    // Esta función recibe por parámetro un número.
    // Debe retornar true si el entero inicia con 9 y false en otro caso.
    // Tu código:
+   let numeroTexto = num.toString();
+   let primerDigito = numeroTexto.charAt(0);
+   return (primerDigito === "9" ? true : false);
 }
 
 function todosIguales(array) {
