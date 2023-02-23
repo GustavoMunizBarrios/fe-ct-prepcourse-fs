@@ -184,6 +184,12 @@ function tablaDelSeis() {
    // Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
    // La función devuelve un arreglo con los resultados de la tabla de multiplicar del 6 en orden creciente.
    // Tu código:
+   let tabla = []
+   for (let i = 0; i < 11; i++ ) {
+      let num = 6 * i;
+      tabla.push(num);
+   }
+   return tabla;
 }
 
 function mayorACien(array) {
