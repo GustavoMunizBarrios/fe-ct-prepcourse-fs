@@ -196,6 +196,15 @@ function mayorACien(array) {
    // La función recibe un arreglo con enteros entre 0 y 200.
    // Recorrerlo y retornar un arreglo con todos los valores mayores a 100 (no incluye el 100).
    // Tu código:
+   // let mayorCien = array.map(numero => (numero > 100 ? numero : false));
+   // return mayorCien
+   let mayorCien = []
+   for (let i = 0; i < array.length; i++) {
+      if (array[i] > 100) {
+         mayorCien.push(array[i]);
+      }
+   }
+   return mayorCien;
 }
 
 /* ----------------------------------------------------------------------------------
