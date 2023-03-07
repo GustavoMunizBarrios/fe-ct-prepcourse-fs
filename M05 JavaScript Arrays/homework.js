@@ -221,7 +221,7 @@ function breakStatement(num) {
    let array = [];
    for (let i = 0; i < 10; i++) {
       num += 2;
-      if (num === i)       {
+      if (num === i) {
          return "Se interrumpió la ejecución";
          break;
       }
@@ -237,7 +237,17 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
+   let array = [];
+   for (let i = 0; i < 10; i++) {
+      if (i === 4) {
+         continue;
+      }
+      num += 2;
+      array.push(num);
+   }
+   return array;
 }
+
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
