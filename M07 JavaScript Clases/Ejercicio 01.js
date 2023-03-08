@@ -37,6 +37,13 @@ function agregarStringInvertida() {
    // Agrega un método al prototipo de "String" que devuelva la misma cadena de caracteres, pero invertida.
    // El método debe llamarse "reverse".
    // [PISTA]: necesitarás utilizar el objeto "this".
+   String.prototype.reverse = function() {
+      return this.split("").reverse().join(""); 
+      //split("") convierte el string en un array.
+     // reverse() invierte el orden de los elementos del array 
+     // join("") convierte el array en un string   
+   }
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
